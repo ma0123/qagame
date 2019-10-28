@@ -7,20 +7,74 @@ body{
 .tab{
     display: none;
     margin-top: 100px;
-    min-height:300px ;
+    min-height:800px ;
     position: relative;
 }
 .btn{
     display: inline-block;
     cursor: pointer;
     position: relative;
-    /*border:2px solid #7ac49a; */
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.671); 
-    opacity: 0.9;
-    padding: 5px;
+    border-radius: 10px;
+    background-color: #339d61; 
+    color: #fff;
+    padding: 8px 30px;
     margin: 5px;
+    font-weight: bolder;
     box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.301);
+}
+
+.btn2{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    background-color: #339d61; 
+    color: #fff;
+    padding: 15px 50px 15px 30px;
+    width: 70%;
+    margin: 5px;
+    font-weight: bolder;
+    text-align: left;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.301);
+}
+
+.trn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent #ffffff;
+    right: 13px;
+    top: 2.7em;
+}
+
+.act{
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    background-color: #d0edca;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 2px;
+    top: -1.8em;
+    left: 0.5em;
+}
+
+.act1{
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    background-color: #d0edca;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 2px;
+    top: -2em;
+    left: 0.5em;
 }
 
 .btn1{
@@ -29,10 +83,11 @@ body{
     position: relative;
     /*border:2px solid #7ac49a; */
     border-radius: 5px;
-    background-color: rgba(241, 253, 255, 0.877); 
-    padding: 5px;
-    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.822); 
+    padding: 8px;
+    margin: 10px;
     box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.301);
+    font-size: 18px;
 }
 
 .border1{
@@ -80,8 +135,9 @@ color: #aaa;
 }
 
 .check1{
+    font-size: 16px;
     position: absolute; 
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -89,15 +145,15 @@ color: #aaa;
 .bg1{
     width:40%;
     margin: auto;
-    background-image:url("../QApic/7-01.jpg");
-    background-size: 100% auto;
     background-repeat: no-repeat;
+    background-image:url("../QApic/1.jpg");
+    background-size: 100% 100%;
 }
 
 .bg2{
     width:40%;
     margin: auto;
-    background-image:url("../QApic/1-01.jpg");
+    background-image:url("../QApic/2.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   
@@ -107,7 +163,7 @@ color: #aaa;
     width:40%;
     height: 100%;
     margin: auto;
-    background-image:url("../QApic/2-01.jpg");
+    background-image:url("../QApic/3.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -116,7 +172,7 @@ color: #aaa;
     width:40%;
     height: 100%;
     margin: auto;
-    background-image:url("../QApic/3-01.jpg");
+    background-image:url("../QApic/4.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -125,7 +181,7 @@ color: #aaa;
     width:40%;
     height: 100%;
     margin: auto;
-    background-image:url("../QApic/4-01.jpg");
+    background-image:url("../QApic/5.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -134,15 +190,25 @@ color: #aaa;
     width:40%;
     height: 100%;
     margin: auto;
-    background-image:url("../QApic/5-01.jpg");
+    background-image:url("../QApic/6.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
 .bg7{
     width:40%;
-    height: 100%;
     margin: auto;
+    background-repeat: no-repeat;
+    background-image:url("../QApic/7.jpg");
+    background-size: 100% 100%;
+}
+
+.bg8{
+    width:40%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-image:url("../QApic/8.jpg");
+    background-size: 100% 100%;
 }
 
 
@@ -150,13 +216,10 @@ color: #aaa;
     margin-top: 50%;
 }
 .po1{
-    margin-top: 80%;
+    margin-top: 90%;
 }
 .po2{
-    margin-top: 20%;
-}
-.po3{
-    margin-top: 10%;
+    margin-top: 120%;
 }
 .pic{
     position: relative;
@@ -164,6 +227,10 @@ color: #aaa;
 
 
 @media only screen and (max-width: 600px) {
+    .tab{
+        min-height: 500px;
+    }
+
     .bg1{
         width:100%;
         margin-top: 100px;
@@ -194,6 +261,11 @@ color: #aaa;
     }
     .bg7{
         width:100%;
+        margin-top: 100px;
+    }
+    .bg8{
+        width:100%;
+        margin-top: 100px;
     }
 }
 
